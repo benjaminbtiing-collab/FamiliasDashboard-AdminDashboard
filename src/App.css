@@ -1,0 +1,216 @@
+.login-container {
+    width: 100%;
+    max-width: 450px;
+}
+
+.login-card {
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05), 0 20px 48px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem 1.5rem;
+    width: 100%;
+    margin-top: 0;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.school-name {
+    position: relative;
+    top: -1.2rem;
+    font-size: 1.50rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.system-name {
+    position: relative;
+    top: -0.35rem;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin-top: -0.6rem;
+    font-weight: 500;
+}
+
+.login-header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-group label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper .icon {
+    position: absolute;
+    left: 1rem;
+    color: var(--text-muted);
+    font-size: 0.875rem;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 0.875rem 2.5rem 0.875rem 2.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--input-bg);
+    font-size: 0.95rem;
+    color: var(--text-main);
+    transition: all 0.3s ease;
+}
+
+.input-wrapper input:hover,
+.input-wrapper input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.15);
+    background-color: #fff;
+}
+
+.input-wrapper input::placeholder {
+    color: #a0aec0;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 1rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.toggle-password:hover {
+    color: var(--text-main);
+}
+
+.error-message {
+    color: var(--error-color);
+    font-size: 0.75rem;
+    margin-top: -0.25rem;
+    display: none;
+}
+
+.input-group.error .error-message {
+    display: block;
+}
+
+.input-group.error input {
+    border-color: var(--error-color);
+    background-color: #fffafb;
+}
+
+.input-group.error input:focus {
+    box-shadow: 0 0 0 3px rgba(239, 35, 60, 0.1);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-top: -0.25rem;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.remember-me input[type="checkbox"] {
+    accent-color: var(--primary-color);
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    transition: box-shadow 0.2s;
+}
+
+.remember-me input[type="checkbox"]:hover,
+.remember-me input[type="checkbox"]:focus-visible {
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+    border-radius: 2px;
+}
+
+.remember-me label {
+    font-size: 0.875rem;
+    color: var(--text-main);
+    cursor: pointer;
+    user-select: none;
+}
+
+.forgot-password {
+    font-size: 0.875rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+    margin-left: 1rem;
+}
+
+.forgot-password:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+.btn-submit {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.875rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    margin-top: 0.5rem;
+}
+
+.btn-submit:hover {
+    background-color: var(--primary-hover);
+}
+
+.btn-submit:active {
+    transform: scale(0.98);
+}
+
+@media (min-width: 480px) {
+    .login-card {
+        padding: 3rem 2.5rem;
+    }
+}
